@@ -9,6 +9,36 @@
 QUIZ_TOPICS = ["ruby", "rspec", "testing", "arrays", "objects"]
 
 # create a quiz object
+class Quiz
+  attr_accessor :array, :trash
+   def initialize
+      @array = []
+      @trash = []
+   end
+
+  def add(number)
+    if number.is_a? Integer
+    @array << number
+    else
+    @trash << number
+    end
+    return @array
+  end
+
+  def numbers
+    puts @array.to_s
+  end
+
+  def trash
+    puts @trash.to_s
+  end
+
+  def rotate
+
+  end
+end
+
+quiz = Quiz.new
 
 # We can add numbers to it
 # quiz = Quiz.new
