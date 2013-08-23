@@ -25,17 +25,14 @@ describe "the add method for a quiz object" do
 
     quiz = Quiz.new
     quiz.add("tree")
-    (quiz.numbers).should_not includes("tree")
+    (quiz.numbers).should_not include("tree")
   end
 
-  it "should return an array" do
-    quiz = Quiz.new
-
-
-  end
 
   it "should return the amount added in the array" do
-
+    quiz = Quiz.new
+    quiz.add(1)
+    expect(quiz.numbers.count).to be(1)
   end
 
   it "it should only integer into the array" do

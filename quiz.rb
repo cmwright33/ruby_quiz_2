@@ -26,11 +26,11 @@ class Quiz
   end
 
   def numbers
-    puts @array.to_s
+     @array
   end
 
   def trash
-    puts @trash.to_s
+    @trash
   end
 
   def rotate
